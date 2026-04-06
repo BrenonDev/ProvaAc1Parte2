@@ -1,0 +1,61 @@
+<section class="detalhe-container" *ngIf="produtoEncontrado; else produtoNaoEncontrado">
+  <div class="container py-5">
+    <div class="detail-card">
+      <div class="detail-header">
+        <div>
+          <span class="tag">Detalhes do produto</span>
+          <h1>{{ produtoEncontrado.nome }}</h1>
+        </div>
+
+        <span
+          class="stock-badge"
+          [ngClass]="produtoEncontrado.emEstoque ? 'in-stock' : 'out-stock'"
+        >
+          {{ produtoEncontrado.emEstoque ? 'Em estoque' : 'Fora de estoque' }}
+        </span>
+      </div>
+
+      <div class="detail-content">
+        <div class="detail-item">
+          <span class="label">ID</span>
+          <p>#{{ produtoEncontrado.id }}</p>
+        </div>
+
+        <div class="detail-item">
+          <span class="label">Preço</span>
+          <p>{{ produtoEncontrado.preco | currency:'BRL':'symbol':'1.2-2' }}</p>
+        </div>
+
+        <div class="detail-item full-width">
+          <span class="label">Descrição</span>
+          <p>{{ produtoEncontrado.descricao }}</p>
+        </div>
+
+        <div class="detail-item full-width">
+          <span class="label">Status de estoque</span>
+          <p>
+            {{ produtoEncontrado.emEstoque ? 'Produto disponível para compra.' : 'Produto indisponível no momento.' }}
+          </p>
+        </div>
+      </div>
+
+      <div class="detail-footer">
+        <button class="btn-back" routerLink="/produto">Voltar para produtos</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ng-template #produtoNaoEncontrado>
+  <section class="detalhe-container">
+    <div class="container py-5">
+      <div class="not-found-card">
+        <h1>Produto não encontrado</h1>
+        <p>
+          O produto informado na rota não existe ou não está disponível para visualização.
+        </p>
+        <button class="btn-back" routerLink="/produto">Voltar para produtos</button>
+      </div>
+    </div>
+  </section>
+</ng-template>

@@ -1,0 +1,63 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #0d1117;
+  color: #f5f7fa;
+}
+
+.sobre-container {
+  background: linear-gradient(180deg, #0d1117 0%, #111827 100%);
+  min-height: 100vh;
+}
+
+.about-card {
+  background: #161b22;
+  border: 1px solid #2a3441;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: inline-block;
+  background: #1f2937;
+  color: #60a5fa;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+
+.about-card h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-card p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.student-card {
+  margin-top: 28px;
+  background: #0f172a;
+  border: 1px solid #233044;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.student-card h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+
+.student-card p {
+  margin-bottom: 8px;
+  color: #dbeafe;
+}

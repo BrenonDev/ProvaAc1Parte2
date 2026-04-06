@@ -1,0 +1,53 @@
+<section class="home-container">
+  <div class="container py-5">
+    <div class="hero-card">
+      <span class="tag">E-commerce Simples</span>
+      <h1 class="title">Sua loja online com navegação simples e experiência moderna</h1>
+      <p class="subtitle">
+        Explore produtos, veja detalhes e teste a navegação entre páginas
+        em uma interface limpa, responsiva e objetiva.
+      </p>
+
+      <div class="actions">
+        <button class="btn btn-banner" (click)="alternarBanner()">
+          {{ showBanner ? 'Ocultar Banner' : 'Mostrar Banner' }}
+        </button>
+      </div>
+    </div>
+
+    <div *ngIf="showBanner" class="promo-banner mt-4">
+      <div>
+        <h2>Oferta especial da semana</h2>
+        <p>
+          Aproveite descontos exclusivos em produtos selecionados e conheça
+          nossa vitrine com itens em destaque.
+        </p>
+      </div>
+      <span class="promo-badge">Até 30% OFF</span>
+    </div>
+
+    <div class="info-grid mt-5">
+      <div class="info-card">
+        <h3>Navegação rápida</h3>
+        <p>
+          Acesse a página de produtos, veja detalhes e teste a estrutura de rotas.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>Interface dinâmica</h3>
+        <p>
+          O banner promocional pode ser exibido ou ocultado com Angular usando
+          renderização condicional.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>Visual moderno</h3>
+        <p>
+          Layout escuro, limpo e agradável, com foco em clareza visual e boa usabilidade.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

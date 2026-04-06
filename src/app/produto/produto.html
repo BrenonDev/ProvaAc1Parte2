@@ -1,0 +1,52 @@
+<section class="produto-container">
+  <div class="container py-5">
+    <div class="page-header">
+      <span class="tag">Produtos</span>
+      <h1>Nossa vitrine</h1>
+      <p>
+        Confira os produtos disponíveis, visualize o status de estoque e acesse
+        a página de detalhes.
+      </p>
+    </div>
+
+    <div *ngIf="produtos.length === 0" class="empty-state">
+      <h2>Nenhum produto disponível no momento</h2>
+      <p>Volte mais tarde para conferir novidades em nossa loja.</p>
+    </div>
+
+    <div *ngIf="produtos.length > 0" class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4" *ngFor="let produto of produtos">
+        <div class="product-card h-100">
+          <div class="card-top">
+            <span class="product-id">#{{ produto.id }}</span>
+            <span
+              class="stock-badge"
+              [ngClass]="produto.emEstoque ? 'in-stock' : 'out-stock'"
+            >
+              {{ produto.emEstoque ? 'Em estoque' : 'Fora de estoque' }}
+            </span>
+          </div>
+
+          <h2 class="product-name">{{ produto.nome }}</h2>
+
+          <p class="product-description">
+            {{ produto.descricao }}
+          </p>
+
+          <div class="price">
+            {{ produto.preco | currency:'BRL':'symbol':'1.2-2' }}
+          </div>
+
+          <button
+            class="btn-buy mt-3"
+            [disabled]="!produto.emEstoque"
+            [ngClass]="produto.emEstoque ? 'btn-active' : 'btn-disabled'"
+            (click)="comprar(produto.id)"
+          >
+            Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

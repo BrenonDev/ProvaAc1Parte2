@@ -1,0 +1,54 @@
+:host {
+  display: block;
+}
+
+.menu-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(13, 17, 23, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1f2937;
+}
+
+.logo span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #60a5fa;
+  letter-spacing: 0.5px;
+}
+
+.menu-nav {
+  gap: 10px;
+}
+
+.nav-link {
+  color: #cbd5e1 !important;
+  border-radius: 10px;
+  padding: 8px 16px;
+  transition: 0.25s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: #1f2937;
+  color: #ffffff !important;
+}
+
+.active-link {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .menu-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

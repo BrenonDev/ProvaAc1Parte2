@@ -1,0 +1,131 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #0d1117;
+  color: #f5f7fa;
+}
+
+.home-container {
+  background: linear-gradient(180deg, #0d1117 0%, #111827 100%);
+  min-height: 100vh;
+}
+
+.hero-card {
+  background: rgba(22, 27, 34, 0.95);
+  border: 1px solid #2a3441;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+.tag {
+  display: inline-block;
+  background: #1f2937;
+  color: #60a5fa;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #cbd5e1;
+  max-width: 720px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-banner {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.btn-banner:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.promo-banner {
+  background: linear-gradient(135deg, #172554 0%, #1e3a8a 100%);
+  border: 1px solid #2b4bb8;
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
+}
+
+.promo-banner h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.promo-banner p {
+  margin: 0;
+  color: #dbeafe;
+  line-height: 1.6;
+}
+
+.promo-badge {
+  background: #f59e0b;
+  color: #111827;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  background: #161b22;
+  border: 1px solid #2a3441;
+  border-radius: 18px;
+  padding: 22px;
+  transition: 0.25s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+}
+
+.info-card h3 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
