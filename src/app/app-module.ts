@@ -9,9 +9,10 @@ import { Produto } from './produto/produto';
 import { ProdutoDetalhe } from './produto-detalhe/produto-detalhe';
 import { Sobre } from './sobre/sobre';
 import { Menu } from './menu/menu';
+import { Error } from './error/error';
 
 @NgModule({
-  declarations: [App, Home, Produto, ProdutoDetalhe, Sobre, Menu],
+  declarations: [App, Home, Produto, ProdutoDetalhe, Sobre, Menu, Error],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],

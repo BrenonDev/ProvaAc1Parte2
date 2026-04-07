@@ -1,0 +1,95 @@
+:host {
+  display: block;
+  min-height: calc(100vh - 73px);
+  background: #0d1117;
+  color: #f5f7fa;
+}
+
+.notfound-container {
+  min-height: calc(100vh - 73px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #0d1117 0%, #111827 100%);
+  padding: 20px;
+}
+
+.notfound-container .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notfound-card {
+  background: #161b22;
+  border: 1px solid #2a3441;
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.tag {
+  display: inline-block;
+  background: #1f2937;
+  color: #60a5fa;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  margin-bottom: 18px;
+}
+
+.error-code {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.notfound-card h2 {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.notfound-card p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-home,
+.btn-products {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.btn-home {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.btn-home:hover {
+  background: #1d4ed8;
+}
+
+.btn-products {
+  background: #1f2937;
+  color: #e5e7eb;
+  border: 1px solid #374151;
+}
+
+.btn-products:hover {
+  background: #374151;
+}
